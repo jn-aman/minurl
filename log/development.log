@@ -2416,3 +2416,261 @@ app/controllers/urls_controller.rb:9:in `show'
   Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.2ms)
+Started GET "/" for ::1 at 2019-08-20 20:16:18 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (3.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.slim within layouts/application
+  Rendered urls/index.html.slim within layouts/application (163.4ms)
+  Rendered application/_header.slim (7.7ms)
+  Rendered application/_notifications.slim (16.3ms)
+  Rendered application/_footer.slim (8.4ms)
+Completed 200 OK in 748ms (Views: 720.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-20 20:16:21 +0530
+Processing by UrlsController#show as 
+  Parameters: {"short_url"=>"favicon"}
+  [1m[36mUrl Load (8.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "favicon"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 9.0ms)
+
+
+  
+NoMethodError (undefined method `sanitized_url' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:9:in `show'
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (18.8ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (221.1ms)
+Started GET "/" for ::1 at 2019-08-20 20:16:52 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.slim within layouts/application
+  Rendered urls/index.html.slim within layouts/application (118.5ms)
+  Rendered application/_header.slim (7.7ms)
+  Rendered application/_notifications.slim (17.1ms)
+  Rendered application/_footer.slim (3.8ms)
+Completed 200 OK in 4628ms (Views: 4598.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application-7d70c4da10201d08364180a5b362714f787b31dc794d3e75656641b7cdab68e9.css" for ::1 at 2019-08-20 20:16:57 +0530
+Started GET "/favicon.ico" for ::1 at 2019-08-20 20:16:57 +0530
+Processing by UrlsController#show as 
+  Parameters: {"short_url"=>"favicon"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "favicon"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `sanitized_url' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:9:in `show'
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.0ms)
+Started POST "/urls" for ::1 at 2019-08-20 20:17:01 +0530
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rkRvFRNQXpYCl3gEA3DPypaFzv4Vxb7iwj9nn+7RrzJPo84F9M80a+VB5uI0YyJtmBwtpKW2KG0D0H8X9mxoyw==", "url"=>{"original_url"=>"herokuoncaffeine.in"}, "commit"=>"Shorten!"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."sanitized_url" = $1 LIMIT $2[0m  [["sanitized_url", "http://herokuoncaffeine.in"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."sanitized_url" = $1 LIMIT $2[0m  [["sanitized_url", "http://herokuoncaffeine.in"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/shortened/vBCKjc
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/shortened/vBCKjc" for ::1 at 2019-08-20 20:17:01 +0530
+Processing by UrlsController#shortened as HTML
+  Parameters: {"short_url"=>"vBCKjc"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "vBCKjc"], ["LIMIT", 1]]
+  Rendering urls/shortened.html.slim within layouts/application
+  Rendered urls/shortened.html.slim within layouts/application (11.7ms)
+  Rendered application/_header.slim (11.5ms)
+  Rendered application/_notifications.slim (16.6ms)
+  Rendered application/_footer.slim (7.1ms)
+Completed 200 OK in 140ms (Views: 136.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-20 20:17:01 +0530
+Processing by UrlsController#show as 
+  Parameters: {"short_url"=>"favicon"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "favicon"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `sanitized_url' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:9:in `show'
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (111.0ms)
+Started GET "/shortened/vBCKjc" for ::1 at 2019-08-20 20:18:15 +0530
+Processing by UrlsController#shortened as HTML
+  Parameters: {"short_url"=>"vBCKjc"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "vBCKjc"], ["LIMIT", 1]]
+  Rendering urls/shortened.html.slim within layouts/application
+  Rendered urls/shortened.html.slim within layouts/application (10.5ms)
+  Rendered application/_header.slim (5.9ms)
+  Rendered application/_notifications.slim (16.4ms)
+  Rendered application/_footer.slim (3.5ms)
+Completed 200 OK in 2820ms (Views: 2816.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-a1307473b2ec03fcf659a23c9a35e716a115318f4b42f01badee0494885a380a.css" for ::1 at 2019-08-20 20:18:18 +0530
+Started GET "/favicon.ico" for ::1 at 2019-08-20 20:18:18 +0530
+Processing by UrlsController#show as 
+  Parameters: {"short_url"=>"favicon"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "favicon"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `sanitized_url' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:9:in `show'
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.1ms)
+Started GET "/shortened/vBCKjc" for ::1 at 2019-08-20 20:18:27 +0530
+Processing by UrlsController#shortened as HTML
+  Parameters: {"short_url"=>"vBCKjc"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "vBCKjc"], ["LIMIT", 1]]
+  Rendering urls/shortened.html.slim within layouts/application
+  Rendered urls/shortened.html.slim within layouts/application (20.6ms)
+  Rendered application/_header.slim (23.1ms)
+  Rendered application/_notifications.slim (16.6ms)
+  Rendered application/_footer.slim (4.3ms)
+Completed 200 OK in 2182ms (Views: 2178.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application-4e6240fa698397eb8f1f2d65cfe8b879eb4cf310aa6d5c383508db14449a87f4.css" for ::1 at 2019-08-20 20:18:29 +0530
+Started GET "/favicon.ico" for ::1 at 2019-08-20 20:18:30 +0530
+Processing by UrlsController#show as 
+  Parameters: {"short_url"=>"favicon"}
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "favicon"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `sanitized_url' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:9:in `show'
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.4ms)
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (155.4ms)
+Started GET "/shortened/vBCKjc" for ::1 at 2019-08-20 20:19:48 +0530
+Processing by UrlsController#shortened as HTML
+  Parameters: {"short_url"=>"vBCKjc"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "vBCKjc"], ["LIMIT", 1]]
+  Rendering urls/shortened.html.slim within layouts/application
+  Rendered urls/shortened.html.slim within layouts/application (14.0ms)
+  Rendered application/_header.slim (9.1ms)
+  Rendered application/_notifications.slim (14.8ms)
+  Rendered application/_footer.slim (5.6ms)
+Completed 200 OK in 2188ms (Views: 2185.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-4bce71af496e30c8e0fb66a3057a22123f9038566d3abbd9bb65323dad60a481.css" for ::1 at 2019-08-20 20:19:51 +0530
+Started GET "/favicon.ico" for ::1 at 2019-08-20 20:19:51 +0530
+Processing by UrlsController#show as 
+  Parameters: {"short_url"=>"favicon"}
+  [1m[36mUrl Load (2.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "favicon"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `sanitized_url' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:9:in `show'
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (117.7ms)
+Started GET "/shortened/vBCKjc" for ::1 at 2019-08-20 20:20:05 +0530
+Processing by UrlsController#shortened as HTML
+  Parameters: {"short_url"=>"vBCKjc"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "vBCKjc"], ["LIMIT", 1]]
+  Rendering urls/shortened.html.slim within layouts/application
+  Rendered urls/shortened.html.slim within layouts/application (6.2ms)
+  Rendered application/_header.slim (11.2ms)
+  Rendered application/_notifications.slim (13.8ms)
+  Rendered application/_footer.slim (4.3ms)
+Completed 200 OK in 2323ms (Views: 2318.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-c12c2643885ca236f2be4795e8871cc62f8b90636ac01f6750575cca136ee0f5.css" for ::1 at 2019-08-20 20:20:08 +0530
+Started GET "/favicon.ico" for ::1 at 2019-08-20 20:20:08 +0530
+Processing by UrlsController#show as 
+  Parameters: {"short_url"=>"favicon"}
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "favicon"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `sanitized_url' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:9:in `show'
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.4ms)
+Started GET "/" for ::1 at 2019-08-20 20:21:48 +0530
+Processing by UrlsController#index as HTML
+  Rendering urls/index.html.slim within layouts/application
+  Rendered urls/index.html.slim within layouts/application (9.6ms)
+  Rendered application/_header.slim (9.8ms)
+  Rendered application/_notifications.slim (11.4ms)
+  Rendered application/_footer.slim (4.4ms)
+Completed 200 OK in 106ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-20 20:21:49 +0530
+Processing by UrlsController#show as 
+  Parameters: {"short_url"=>"favicon"}
+  [1m[36mUrl Load (1.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short_url" = $1 LIMIT $2[0m  [["short_url", "favicon"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `sanitized_url' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:9:in `show'
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.4ms)
+  Rendered /Users/amanjain/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (119.0ms)
