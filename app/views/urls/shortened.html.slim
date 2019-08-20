@@ -8,10 +8,9 @@
       input#url_original_url.string.disabled.form-control disabled="disabled" value="#{@url.original_url}"
     br
     br
-    <center>p.larger
+    p.larger
       | Your shortened URL is: &nbsp;
       span#short-url data-content="Press #{user_has_a_mac? ? 'Cmd-C' : 'Ctrl-C'} to copy" data-placement="bottom" minurl.in/#{@url.short_url}
     br
     br
-    </center>
     
