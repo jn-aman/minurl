@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
 
+gem 'mysql2'
 gem 'rails', '5.0.7'
 gem 'puma'
 gem 'pg'
@@ -15,4 +15,5 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'autoprefixer-rails'
+gem 'mini_racer'
 
